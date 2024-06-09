@@ -6,6 +6,7 @@
     <p class="mt-4">
     <RouterLink to="/"  class="border-sm py-2 px-2 rounded bg-blue-400 text-white mt-20">Go back to home page</RouterLink>
     </p>
+    
   </div>
 </template>
 
