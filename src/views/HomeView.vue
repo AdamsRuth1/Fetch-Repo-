@@ -22,10 +22,10 @@
         </div>
         <ul class="hidden md:flex space-x-4">
           <li>
-            <a href="#" class="text-darkblue hover:bg-white hover:text-customButton hover:border-customButton hover:rounded-full px-4 py-2 border-2 border-transparent transition-all duration-300">My Repos</a>
+            <a href="#" class="text-blue-500  hover:bg-gray-700 hover:text-white hover:border-customButton hover:rounded-full px-4 py-2 border-2 border-transparent transition-all duration-300">My Repos</a>
           </li>
           <li>
-            <RouterLink to="/error" class="text-black hover:bg-white hover:text-customButton hover:border-customButton hover:rounded-full px-4 py-2 border-2 border-transparent transition-all duration-300">404</RouterLink>
+            <RouterLink to="/error" class="text-blue-500  hover:bg-gray-700 hover:text-white hover:border-customButton hover:rounded-full px-4 py-2 border-2 border-transparent transition-all duration-300">404</RouterLink>
           </li>
         </ul>
         
@@ -34,9 +34,9 @@
 
     <!-- mobile display -->
     <ul v-if="isOpen" class="flex-col md:hidden shadow p-20">
-      <li class="text-black hover:text-white hover:bg-blue-400 hover:rounded-full px-3 py-3 mb-20 border border-transparent transition-all duration-300">    <RouterLink to="/">My Repos</RouterLink>
+      <li class="text-black hover:text-white hover:bg-gray-700 hover:rounded-full px-3 py-3 mb-20 border border-transparent transition-all duration-300">    <RouterLink to="/">My Repos</RouterLink>
 </li>
-      <li class="text-black hover:text-white hover:bg-blue-400 hover:rounded-full px-3 py-3 border border-transparent transition-all duration-300">    <RouterLink to="/error">404</RouterLink>
+      <li class="text-black hover:text-white hover:bg-gray-700 hover:rounded-full px-3 py-3 border border-transparent transition-all duration-300">    <RouterLink to="/error">404</RouterLink>
 </li>
     
     </ul>
@@ -59,11 +59,13 @@
 </form>
 
     </div>
+    <Repo />
 </template>
 
 <script setup>
 import { ref } from 'vue';
 import logo from '../assets/RuthLogo1.png';
+import Repo from './repo.vue';
 
 
 const isOpen = ref(false);
